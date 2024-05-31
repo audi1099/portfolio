@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио [Ваше имя]</title>
+    <title>Портфолио Виталий Калютчик</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Виталий Калютчик</h1>
-            <p>Начинающий Python разработчик</p>
+            <h1 data-lang-en="Vitali Kaliutchyk" data-lang-ru="Виталий Калютчик">Виталий Калютчик</h1>
+            <p data-lang-en="Junior Python Developer" data-lang-ru="Начинающий Python разработчик">Начинающий Python разработчик</p>
             <nav>
                 <ul>
-                    <li><a href="#about">Обо мне</a></li>
-                    <li><a href="#projects">Проекты</a></li>
-                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="#about" data-lang-en="About Me" data-lang-ru="Обо мне">Обо мне</a></li>
+                    <li><a href="#projects" data-lang-en="Projects" data-lang-ru="Проекты">Проекты</a></li>
+                    <li><a href="#contact" data-lang-en="Contact" data-lang-ru="Контакты">Контакты</a></li>
                 </ul>
             </nav>
+            <div class="language-switcher">
+                <button onclick="setLanguage('ru')">RU</button>
+                <button onclick="setLanguage('en')">EN</button>
+            </div>
         </div>
     </header>
 
     <section id="about">
         <div class="container">
-            <h2>Обо мне</h2>
-            <img src="profile.jpg" alt="Фото [Ваше имя]" class="profile-photo">
-            <p>Я начинающий Python разработчик с сильной мотивацией развиваться в области программирования.
-                Ищу возможность применить свои навыки и знания в реальных проектах.</p>
+            <h2 data-lang-en="About Me" data-lang-ru="Обо мне">Обо мне</h2>
+            <img src="profile.jpg" alt="Фото Виталий Калютчик" class="profile-photo">
+            <p data-lang-en="I am a junior Python developer with a strong motivation to develop in the field of programming. Looking for an opportunity to apply my skills and knowledge in real projects." data-lang-ru="Я начинающий Python разработчик с сильной мотивацией развиваться в области программирования. Ищу возможность применить свои навыки и знания в реальных проектах.">Я начинающий Python разработчик с сильной мотивацией развиваться в области программирования. Ищу возможность применить свои навыки и знания в реальных проектах.</p>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
-            <h2>Проекты</h2>
+            <h2 data-lang-en="Projects" data-lang-ru="Проекты">Проекты</h2>
             <div class="project">
-                <h3>Parser-Kufar </h3>
-                <p>Описание проекта: 1. Этот бот Telegram позволяет пользователям искать обьявления в Куфаре. Он получает
-                    результаты поиска по заданному ключевому слову и отправляет их пользователю.
-                </p>
-                <a href="https://github.com/audi1099/Parser-Kufar" target="_blank">Ссылка на проект</a>
+                <h3 data-lang-en="Parser-Kufar" data-lang-ru="Parser-Kufar">Parser-Kufar</h3>
+                <p data-lang-en="Project description: This Telegram bot allows users to search for ads on Kufar. It retrieves search results based on a given keyword and sends them to the user." data-lang-ru="Описание проекта: Этот бот Telegram позволяет пользователям искать объявления в Куфаре. Он получает результаты поиска по заданному ключевому слову и отправляет их пользователю.">Описание проекта: Этот бот Telegram позволяет пользователям искать объявления в Куфаре. Он получает результаты поиска по заданному ключевому слову и отправляет их пользователю.</p>
+                <a href="https://github.com/audi1099/Parser-Kufar" target="_blank" data-lang-en="Project link" data-lang-ru="Ссылка на проект">Ссылка на проект</a>
             </div>
 
             <!-- Добавьте больше проектов по необходимости -->
@@ -47,19 +49,20 @@
 
     <section id="contact">
         <div class="container">
-            <h2>Контакты</h2>
-            <p>Email: <a href="mailto:ваш_email@example.com">audi1099@gmail.com</a></p>
+            <h2 data-lang-en="Contact" data-lang-ru="Контакты">Контакты</h2>
+            <p>Email: <a href="mailto:audi1099@gmail.com">audi1099@gmail.com</a></p>
             <p>GitHub: <a href="https://github.com/audi1099" target="_blank">https://github.com/audi1099</a></p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Vitali Kaliutchyk. Все права защищены.</p>
+            <p data-lang-en="&copy; 2024 Vitali Kaliutchyk. All rights reserved." data-lang-ru="&copy; 2024 Виталий Калютчик. Все права защищены.">&copy; 2024 Виталий Калютчик. Все права защищены.</p>
         </div>
     </footer>
 </body>
 </html>
+
 
 
 
