@@ -46,6 +46,24 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+.language-switcher {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.language-switcher button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.language-switcher button:hover {
+    background-color: #555;
+}
+
 section {
     padding: 2rem 0;
 }
@@ -90,3 +108,4 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
